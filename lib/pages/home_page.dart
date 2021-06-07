@@ -12,7 +12,13 @@ class Homepage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: Text("Welcome to Youtube Channel $name"),
+          child: Text("Welcome to Youtube Channel $name" , style: TextStyle(
+            fontSize: 10,
+          ),
+            textAlign: TextAlign.center,
+            textScaleFactor: 2,
+
+          ),
         ),
       ),
       drawer: Drawer(),
