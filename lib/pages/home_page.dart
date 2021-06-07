@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled1/widget/drawer.dart';
 
 
 class Homepage extends StatelessWidget {
@@ -10,7 +11,7 @@ class Homepage extends StatelessWidget {
       appBar: AppBar(
         title: Text("HM Web Tech"),
       ),
-      body: Center(
+      body:   Center(
         child: Container(
           child: Text("Welcome to Youtube Channel $name" , style: TextStyle(
             fontSize: 10,
@@ -21,7 +22,7 @@ class Homepage extends StatelessWidget {
           ),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
