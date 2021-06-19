@@ -41,12 +41,12 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
    // final dummyList=List.generate(20, (index) => CatalogModel.items[0]);
     return Scaffold(
-      backgroundColor: MyTheme.creamColor,
+      backgroundColor: context.cardColor,
 
       floatingActionButton: FloatingActionButton(onPressed: ()=> Navigator.pushNamed(context, MyRoutes.cartRoute),
 
-        backgroundColor: MyTheme.darkblueish,
-      child: Icon(CupertinoIcons.cart),
+        backgroundColor: context.theme.buttonColor,
+      child: Icon(CupertinoIcons.cart,color: Colors.white,),
       ),
       body:SafeArea(
         child: Container(
